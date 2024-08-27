@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Itim&family=Neucha&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "itim", sans-serif;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: darkblue;
+  font-weight: 600;
+}
+
+header {
+  background-image: url("./img/mff.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  /* max-width: 80%; */
+  padding: 4rem;
+}
+
+header .intro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 70%;
+  margin-top: 10rem;
+}
+
+header h1 {
+  font-family: "Alex Brush", cursive, sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+header p {
+  font-size: x-large;
+}
+
+section {
+  font-family: "Neucha", cursive, sans-serif;
+  font-weight: 500;
+  padding: 4rem 4rem 2rem 4rem;
+  margin-top: 2rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section .date-time {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+section .date-time :nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+section .date-time :nth-child(4) {
+  margin-bottom: 4rem;
+}
+
+section img {
+  width: 60%;
+}
+
+iframe {
+  width: 100%;
+}
+
+article {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+article h2 {
+  font-family: "Neucha", cursive, sans-serif;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 30px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+article p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 30px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+#gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#gallery::after {
+  content: "";
+  width: 350px;
+}
+
+footer{
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  background-color: #0a0a23;
+  color: #fff;
+  border-top: 4px solid #fdb347;
+}
+
+/* Responsiveness */
+
+/* For mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 50vh;
+    padding: 2rem;
+  }
+  header .intro {
+    max-width: 90%;
+    margin-top: 5rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  header p {
+    font-size: large;
+  }
+  section {
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  section .date-time {
+    font-size: 1.5rem;
+  }
+  section img {
+    width: 80%;
+  }
+  article {
+    padding: 2rem 0;
+  }
+  article h2 {
+    font-size: 3rem 0;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For tablets (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 70vh;
+    padding: 3rem;
+  }
+  header .intro {
+    max-width: 80%;
+    margin-top: 7rem;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+  header p {
+    font-size: x-large;
+  }
+  section {
+    padding: 3rem;
+    margin-top: 2rem;
+  }
+  section .date-time {
+    font-size: 2rem;
+  }
+  section img {
+    width: 50%;
+  }
+  article {
+    padding: 3rem 0;
+  }
+  article h2 {
+    font-size: 3.5rem 0;
+  }
+  article p {
+    font-size: 1.5rem;
+  }
+}
