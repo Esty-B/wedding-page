@@ -176,6 +176,7 @@ footer{
   }
   section .date-time {
     font-size: 1.5rem;
+    height: 50%;
   }
   section img {
     width: 80%;
