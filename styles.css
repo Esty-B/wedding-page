@@ -143,6 +143,32 @@ article p {
   width: 350px;
 }
 
+code {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+code h2 {
+  font-family: "Neucha", cursive, sans-serif;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 30px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+code p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
 footer{
   text-align: center;
   padding: 1.2rem;
@@ -225,6 +251,15 @@ footer{
     font-size: 3.5rem 0;
   }
   article p {
+    font-size: 1.5rem;
+  }
+  code {
+    padding: 3rem 0;
+  }
+  code h2 {
+    font-size: 3.5rem 0;
+  }
+  code p {
     font-size: 1.5rem;
   }
 }
