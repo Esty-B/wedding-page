@@ -19,13 +19,3 @@
       })
   })()
 
-{
-  const random = Math.random();
-  const kode = document.querySelector(".code")
-
-  const generate = () => {
-    if(random > 0){
-      kode.textContent = "random";
-    }
-  }
-}

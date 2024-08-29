@@ -20,7 +20,7 @@ a:hover {
 }
 
 header {
-  background-image: url("Upload/img/mff.jpg");
+  background-image: url("./img/mff.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -143,30 +143,46 @@ article p {
   width: 350px;
 }
 
-code {
+aside .gift{
+  width: 80%;
+  margin: auto;
   text-align: center;
-  padding: 4rem 0;
 }
 
-code h2 {
-  font-family: "Neucha", cursive, sans-serif;
-  font-weight: 700;
-  margin: 2rem 0;
+aside h1{
+  font-size: 3rem;
+  font-weight: 600;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
   padding: 30px;
   background-color: #0a0a23;
   color: #fff;
   border-bottom: 4px solid #fdb347;
+  margin: 3rem 0;
 }
 
-code p {
-  font-size: 1.5rem;
-  width: 80%;
+.gift p{
+  width: 50%;
   margin: auto;
-  text-align: left;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-stuff label{
+  font-size: xx-large;
+}
+
+.main-stuff p{
+  font-family: "Neucha", cursive, sans-serif;;
+  font-weight: 700;
+}
+
+aside img{
+  width: 100%;
+  margin: 2rem 1rem;
+  max-width: 100px;
+  height: 60px;
 }
 
 footer{
@@ -194,18 +210,25 @@ footer{
     font-size: 4rem;
   }
   header p {
-    font-size: large;
+    display: none;
   }
   section {
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     margin-top: 1rem;
+    display: block;
   }
-  section .date-time {
-    font-size: 1.5rem;
-    height: 50%;
-  }
+  section .date-time p { 
+    margin-bottom: 0.5rem; 
+}
+section .date-time p:nth-child(4){
+  margin-bottom: 1rem;
+}
+section .date-time p:first-of-type{
+  margin-bottom: 1rem;
+}
   section img {
-    width: 80%;
+    width: 60%;
+    height: auto;
   }
   article {
     padding: 2rem 0;
@@ -215,6 +238,13 @@ footer{
   }
   article p {
     font-size: 1.2rem;
+  }
+  .gift{
+    width: 50%;
+    font-size: 1rem;
+  }
+  .gift p{
+    width: 100%;
   }
 }
 
@@ -251,15 +281,6 @@ footer{
     font-size: 3.5rem 0;
   }
   article p {
-    font-size: 1.5rem;
-  }
-  code {
-    padding: 3rem 0;
-  }
-  code h2 {
-    font-size: 3.5rem 0;
-  }
-  code p {
     font-size: 1.5rem;
   }
 }
